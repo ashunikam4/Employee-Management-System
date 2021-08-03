@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Every web application by default has standard manager
+ implementation configured, and it performs session persistence across restarts. 
+ To disable this persistence feature, create a Context configuration file for your 
+ web application and add the following element there: -->
+<Context>
+    <Manager pathname="" />
+</Context>
