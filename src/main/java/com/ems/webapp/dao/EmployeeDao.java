@@ -106,6 +106,11 @@ public class EmployeeDao {
 				int deptID = rs.getInt(6);
 				String dept = DepartmentDao.getDeptName(deptID);
 
+				// Do not display admin users 
+				LoginDetails login = LoginDao.getAccessLevel(eid); 
+				if(login == null || login.getAdminAccess())
+					continue;
+				
 				Employee emp = new Employee();
 				emp.setEid(eid);
 				emp.setFname(fname);
