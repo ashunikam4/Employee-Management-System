@@ -42,7 +42,7 @@ So, a new system is required to automate this regulation creation and closure pr
     ~$ cd Employee-Management-System
     ~$ mvn tomcat7:run
     ```
-4. Visit http://localhost:8080/webapp/
+4. Visit http://localhost:8080/webapp/, use user Id = `1` and password = `root123` for admin access.
 
 ## Logging
 By default, logs are sent to both console and log file (`Employee-Management-System/emslogging.log`). To change the logging location, update `src/main/resources/log4j.properties` file.
