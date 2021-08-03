@@ -50,7 +50,7 @@
 						Report ID <input type="text" name="sid" value="${sr.sid}" readonly /><br />
 						R/L ID <input type="text" name="rid" value="${sr.rl.rid}" readonly /><br />
 						R/L Type <input type="text" name="rl_type" value="${sr.rl.type}" readonly /><br /> 
-						R/L Details <input type="text" name="rl_details" value="${sr.rl.details}" readonly /><br />
+						R/L Details <textarea name="rl_details" rows="8" cols="41" readonly>${sr.rl.details}</textarea><br />
 						Comments <textarea name="comments" rows="8" cols="41">${sr.comments}</textarea>
 						<button type="submit">Update</button>
 					</div>

@@ -47,9 +47,9 @@
 
 				<form method="post" action="submitReport">
 					<div class="container">
-						RL ID <input readonly type="text" name="rid" value="${requestScope.rl.rid}" /><br /> 
-						RL Type <input type="text" name="rl_type" value="${requestScope.rl.type}" readonly /><br /> 
-						RL Details <input type="text" name="rl_details" value="${requestScope.rl.details}" readonly /><br />
+						R/L ID <input readonly type="text" name="rid" value="${requestScope.rl.rid}" /><br /> 
+						R/L Type <input type="text" name="rl_type" value="${requestScope.rl.type}" readonly /><br /> 
+						R/L Details <textarea name="rl_details" rows="8" cols="41" readonly>${requestScope.rl.details}</textarea><br />
 						<textarea placeholder="Enter your comments" name="comments"rows="8" cols="41"></textarea>
 						<button type="submit">Submit</button>
 					</div>

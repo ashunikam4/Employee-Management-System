@@ -125,7 +125,7 @@ input::placeholder, textarea::placeholder {
   font-size: 16px;
 }
 
-input:read-only {
+input:read-only, textarea:read-only {
 	background-color: #d8f3e6;
 	color: gray;
 	font-style: italic;
