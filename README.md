@@ -37,15 +37,20 @@ So, a new system is required to automate this regulation creation and closure pr
     ~$ git clone https://github.com/ashunikam4/Employee-Management-System.git
     ```
 2. In `src/main/resources/mysqlconn.properties`, set the url, username and password for MySQL connection (refer [JDBC docs](https://docs.oracle.com/javase/tutorial/jdbc/basics/connecting.html#db_connection_url))
-3. Run
+3. Set up the database
+    ```bash 
+    ~$ cd Employee-Management-System
+    ~$ mysql -u USERNAME -p < database/ems_setup.sql 
+    ```
+4. Run
     ```bash
     ~$ cd Employee-Management-System
     ~$ mvn tomcat7:run
     ```
-4. Visit http://localhost:8080/webapp/, use user Id = `1` and password = `root123` for admin access.
+5. Visit http://localhost:8080/webapp/, use user Id = `1` and password = `root123` for admin access.
 
 ## Logging
 By default, logs are sent to both console and log file (`Employee-Management-System/emslogging.log`). To change the logging location, update `src/main/resources/log4j.properties` file.
 
 ## View Samples 
-To get an idea of how the webapp looks, see [here](view-samples)
+To get an idea of how the webapp looks, see [here](view-samples/README.md)

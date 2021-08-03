@@ -8,7 +8,6 @@ drop table if exists compliance;
 drop table if exists employees;
 drop table if exists department;
 
-
 -- ddl queries
 create table if not exists department (
     dept_id int not null auto_increment primary key,
