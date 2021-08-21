@@ -1,4 +1,4 @@
-# Employee-Management-System(WIP)
+# Employee-Management-System
 
 This is simple Employee Management System web application developed using **Java Servlets, JSP JDBC and My SQL**. 
 
